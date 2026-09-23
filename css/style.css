@@ -29,6 +29,10 @@ body {
     padding: 1rem;
     background-color: var(--White);
     border-radius: 1rem;
+    box-shadow: 5px 5px black;
+    transition: all 0.3s ease-in;
+}
+.card:hover {
     box-shadow: 10px 10px black;
 }
 .card .card-img {
@@ -62,6 +66,9 @@ body {
 .content h1 {
     font-size: 1.5rem;
     font-weight: 800;
+}
+.content h1:hover {
+    color: var(--Yellow);
 }
 .profile {
     display: flex;
