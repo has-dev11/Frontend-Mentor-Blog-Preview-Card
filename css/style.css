@@ -1,0 +1,80 @@
+@import url("fonts.css");
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+    font-family: Figtree;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--Gray-950);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20% 0;
+    background-color: var(--Yellow);
+}
+.card {
+    width: 327px;
+    padding: 1rem;
+    background-color: var(--White);
+    border-radius: 1rem;
+    box-shadow: 10px 10px black;
+}
+.card .card-img {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.card .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+.content button {
+    font-size: 1rem;
+    background-color: var(--Yellow);
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    font-weight: 800;
+    color: var(--Gray-950);
+}
+.content p {
+    color: var(--Gray-500);
+}
+.content .publishing-date {
+    color: var(--Gray-950);
+}
+.content h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 800;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+
+@media screen and (min-width: 375) {
+   .card {
+        width: 384px;
+   } 
+}
